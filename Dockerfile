@@ -2,6 +2,7 @@ FROM python:3.11.2-slim-bullseye
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+ADD config.cfg /config.cfg
 COPY ./fonts/sarasa-mono-sc-regular.ttf /usr/share/fonts/
 
 RUN apt-get update && \
